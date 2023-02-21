@@ -1,1 +1,562 @@
-<h1>Merhaba</h1>
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title id="title">Web Site</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		
+		<link rel="shortcut icon" href="ico/favicon.ico">
+		<link rel="icon" href="ico/favicon.ico" type="image/x-icon">
+		
+		<!--Fonts-->
+		<link href='../fonts.googleapis.com/css/css982d.css?family=Poppins:300,400,500,600,700|Lora:400,400i,700,700i' rel='stylesheet' type='text/css'>
+		
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	
+	<body data-ng-app="contactApp">
+	
+		<!--Preloader-->
+		<div class="preloader-it">
+			<div class="la-anim-1"></div>
+		</div>
+		<!--/Preloader-->
+		
+		<!--Container-->
+		<div class="pad-zero">
+			
+			<!--Splitlayout -->
+			<div id="splitlayout" class="splitlayout reset-layout">
+				
+				<!--Intro-->
+				<div class="intro">
+					
+					<!--Left Content Intro-->
+					<div class="side side-left text-center">
+						
+						<!--Background Slider-->
+						<div class="slider  full-height">
+							<!--Slider One-->
+							<div class="slide slide-0 active">
+								<div class="slide__bg"></div>
+							</div>
+							<!--/Slider One-->
+							
+							<!--Slider Two-->
+							<div class="slide slide-1">
+								<div class="slide__bg"></div>
+							</div>
+							<!--/Slider Two-->
+							
+							<!--Slider Three-->
+							<div class="slide slide-2">
+								<div class="slide__bg"></div>
+							</div>
+							<!--/Slider Three-->
+						</div>
+						<!--/Background Slider-->
+						
+						<!--Left Nav-->
+						<div class="call-to-action about btn btn-circle btn-icon-anim">
+							<div>
+								<span class="goto-next">
+									<i class="icon-info"></i>
+								</span>
+								<span class="goto-close opacity-hide">
+									<i class="icon-close"></i>
+								</span>
+								
+							</div>	
+						</div>
+						<!--/Left Nav-->
+						
+						<!--Main Content-->
+						<section class="col-lg-9 col-md-10 col-sm-11 col-xs-11 content-wrap align-center sec-pad">
+							<div class="table-wrap">
+								<div class="table-cell vertical-align-middle">
+									<!--Logo-->
+									<header class="logo margin-bottom-25">
+										<img src="png/logo.png" alt="logo">
+									</header>
+									<!--/Logo-->
+									
+									<p class="secondery-font margin-bottom-25">We are busy working on something awesome.</p>
+									<div class="type-wrap hide-overflow margin-bottom-15">
+										<h1 class="animated"><span id="typed" ></span></h1>
+									</div>
+									<img class="inline-block margin-bottom-5" src="png/tree.png" alt="chrismas"/>
+									<span class="block secondery-font font-16 font-italic font-capitalize">Merry Christmas</span>
+								</div>	
+							</div>	
+							<!--left overlay-->
+						</section>
+						
+						<!--Gradient overlay-->
+						<div id="gradient"></div>
+						<!--Gradient overlay-->
+						
+						<!--Left overlay-->
+						<div class="side-left-overlay"></div>
+						<!--Left overlay-->
+						
+					</div>
+					<!--/Left Content Intro-->
+					
+					<!--Right Content Intro-->
+					<div class="side side-right text-center bg-pattern">
+						
+						<!--Right Nav-->
+						<div class="call-to-action contact btn btn-circle btn-icon-anim">
+							<div>
+								<span class="goto-next">
+									<i class="icon-envelope-open"></i>
+								</span>
+								<span class="goto-close opacity-hide">
+									<i class="icon-close"></i>
+								</span>
+								
+							</div>	
+						</div>
+						<!--/Right Nav-->
+						
+						<section class="col-lg-12 content-wrap sec-pad">
+							<div class="table-wrap">
+								<div class="table-cell vertical-align-middle">
+									<div class="main-content">
+										<!--main content-->
+										<section class="col-lg-8 col-md-8 col-sm-9 col-xs-11 intro-text hide-overflow align-center">
+											<div id="slide_out" class="relative">
+												<img class="inline-block margin-bottom-5" src="png/tree.png" alt="chrismas"/>
+												<!--Counter-->
+												<div id="countdown" class=" secondery-font font-16 font-italic margin-bottom-20">
+												  <span class="days">00</span>
+												  <span>days to go</span>
+												</div>
+												<!--/Counter-->	
+												<h4 class="font-uppercase margin-top-35 margin-bottom-35">We craft unique digital experiences throughout the universe.</h4>
+												<div class="clearfix"></div>
+												<div class="notify-btn main-menu">
+													<span class="btn btn-default">
+														<span class="mask"></span>
+														<span class="btn-label">
+															<b>Notify me</b>
+														</span>
+													</span>
+												</div>
+											</div>	
+											<!--Notify Form-->
+											<section id="slide_in" class="text-center  notify-form-wrap relative hide-block hide-left-opac">
+												<a id="notify_close" class="close-notify margin-bottom-15 margin-lr-auto" href="#">
+													<div>
+														<span class="goto-close">
+															<i class="icon-close"></i>
+														</span>
+														
+													</div>	
+												</a>
+												
+												<!--CONTENT CHANGED & <br> ADDED-->								
+												<div class="notify-wrap">
+													<h4 class="wellcome-text margin-bottom-25" data-ng-bind="notify || 'hello'">Hello</h4>
+													<form id="notifyMe" class="contact-form"  action="https://hencework.com/theme/porky/sliderwithgradient/notify-me.php" method="post">
+														<div class="input-wrap margin-bottom-25">
+															<input  data-ng-model="notify" class="col-lg-10  align-center form-control input input__field input__field--hoshi text-center" name="email" placeholder="email id"  type="email">
+															<label class="input__label input__label--hoshi input__label--hoshi-color-1"></label>
+															
+														</div>	
+														
+														<button type="submit" data-hover="Send" class="btn btn-default progress-button btn-submit">
+														<span class="mask"></span>
+														<span class="btn-label">submit</span>
+														</button>
+													</form>
+												</div>
+											</section>
+											<!--/Notify Form-->
+										</section>
+										<!--/main content-->
+									</div>
+								</div>
+							</div>
+						</section>			
+						<div class="container-fluid pad-zero social-wrpper">
+														
+							<!--Footer-->
+							<footer class="copyright-text margin-sm-30 margin-top-xs-0">
+							
+								<!--Social Icons-->
+								<ul class="social-icons animated">
+									<li>
+										<a href="#" class="social-icon">
+											<span class="fa" data-hover="&#xf09a;">&#xf09a;</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="social-icon">
+											<span class="fa" data-hover="&#xf099;">&#xf099;</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="social-icon">
+											<span class="fa" data-hover="&#xf16e;">&#xf16e;</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="social-icon">
+											<span class="fa" data-hover="&#xf16d;">&#xf16d;</span>
+										</a>
+									</li>
+								</ul>
+								<!--/Social Icons-->
+								
+								<p>© 2023</p>
+							</footer>
+							<!--/Footer-->
+							
+						</div>	
+						
+						<!--Right overlay-->
+						<div class="side-right-overlay"></div>
+						<!--/Right overlay-->
+						
+					</div>
+					<!--/Right Content Intro-->
+					
+				</div>
+				<!--/Intro-->
+				
+				<!--Left Section-->
+			<div class="page page-left">
+					<div  class="page-inner full-height">
+					
+						
+							<section class="container-fluid align-center text-left animated sec-pad-top sec-pad-bottom-xs about-sec">
+							<div class="row">
+								<div class="col-lg-12">
+									<h4 class="margin-bottom-25">The Company</h4>
+									<p class="lead">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+									<div class="about-icon-wrap padding-top-60">
+										<div class="row">
+											<div class="col-md-3 col-xs-6 col-xxs-12  margin-bottom-45">
+												<span class="icon pe-7s-graph1"></span>
+												<h6 class="margin-top-25 margin-bottom-15">
+													Dashboards
+												</h6>
+												<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem consequat ipsum.</p>
+											</div>
+											<div class="col-md-3 col-xs-6 col-xxs-12 margin-bottom-45">
+												<span class="icon pe-7s-tools"></span>
+												<h6 class="margin-top-25 margin-bottom-15">
+													Branding
+												</h6>
+												<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem consequat ipsum.</p>
+											</div>
+											<div class="col-md-3 col-xs-6 col-xxs-12 margin-bottom-45">
+												<span class="icon pe-7s-hourglass"></span>
+												<h6 class="margin-top-25 margin-bottom-15">
+													Marketing
+												</h6>
+												<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem consequat ipsum.</p>
+											</div>
+											<div class="col-md-3 col-xs-6 col-xxs-12 margin-bottom-45">
+												<span class="icon pe-7s-graph3"></span>
+												<h6 class="margin-top-25 margin-bottom-15">
+													Strategy
+												</h6>
+												<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem consequat ipsum.</p>
+											</div>
+										</div>	
+									</div>	
+								</div>	
+							</div>
+						</section>
+					
+						
+						<!--Projects Sec-->
+						<section class="container-fluid align-center text-left animated sec-pad-top sec-pad-bottom-xs bg-pattern bg-attachment-fixed">
+							<div class="row">
+								<div class="col-lg-12">
+									<h4 class="margin-bottom-25">Our Work</h4>
+									<p class="lead">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.Proin gravida nibh vel velit auctor aliquet.</p>
+									
+								</div>	
+							</div>
+							<div class="project-gal-wrap">
+								 <div class="project-gallery row" itemscope itemtype="http://schema.org/ImageGallery">
+									<figure class="col-md-4 col-xs-6 col-xxs-12 margin-bottom-45" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+									  <a href="jpg/project1.jpg" itemprop="contentUrl" data-size="730x490">
+										  <img class="img-responsive" src="jpg/project1.jpg" itemprop="thumbnail" alt="Image description" />
+										  <div class="hover"><span>+</span></div>
+									  </a>
+										<figcaption itemprop="caption description">Landscape Photoshoot</figcaption>
+
+									</figure>
+									<figure class="col-md-4 col-xs-6 col-xxs-12 margin-bottom-45" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+									  <a href="jpg/project2.jpg" itemprop="contentUrl" data-size="730x490">
+										  <img class="img-responsive" src="jpg/project2.jpg" itemprop="thumbnail" alt="Image description" />
+										  <div class="hover"><span>+</span></div>
+									  </a>
+										<figcaption itemprop="caption description">Coffee with porky</figcaption>
+									</figure>
+									<figure class="col-md-4 col-xs-6 col-xxs-12 margin-bottom-45" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+									  <a href="jpg/project3.jpg" itemprop="contentUrl" data-size="730x490">
+										  <img class="img-responsive" src="jpg/project3.jpg" itemprop="thumbnail" alt="Image description" />
+										  <div class="hover"><span>+</span></div>
+									  </a>
+										<figcaption itemprop="caption description">Girl next door</figcaption>
+									</figure>
+								</div>
+							</div>
+						</section>
+						<!--/Projects Sec-->
+						
+						<!--Team Sec-->
+						<section class="container-fluid align-center text-left animated sec-pad-top sec-pad-bottom-xs team-sec">
+							<div class="row">
+								<div class="col-lg-12">
+									<h4 class="margin-bottom-35">Our Wonderful Team</h4>
+									<div class="row">
+										<div class="col-md-3 col-xs-6 col-xxs-12 margin-bottom-45">
+											<img class="img-responsive" src="jpg/team1.jpg" alt="team"/>
+											<span class="team-per">john doe</span>
+											<span class="team-desn">Director</span>
+											<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem consequat ipsum.</p>
+											<ul class="team-social margin-top-15">
+												<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+												<li><a href="#" target="_blank"><i class="fa fa-behance"></i></a></li>
+											</ul>
+										</div>
+										<div class="col-md-3 col-xs-6 col-xxs-12 margin-bottom-45">
+											<img class="img-responsive" src="jpg/team2.jpg" alt="team"/>
+											<span class="team-per">max tailor</span>
+											<span class="team-desn">Administrator</span>
+											<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem consequat ipsum.</p>
+											<ul class="team-social margin-top-15">
+												<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+												<li><a href="#" target="_blank"><i class="fa fa-behance"></i></a></li>
+											</ul>
+										</div>
+										<div class="col-md-3 col-xs-6 col-xxs-12 margin-bottom-45">
+											<img class="img-responsive" src="jpg/team3.jpg" alt="team"/>
+											<span class="team-per">Johannes Grey</span>
+											<span class="team-desn">Business Development</span>
+											<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem consequat ipsum.</p>
+											<ul class="team-social margin-top-15">
+												<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+												<li><a href="#" target="_blank"><i class="fa fa-behance"></i></a></li>
+											</ul>
+										</div>
+										<div class="col-md-3 col-xs-6 col-xxs-12 margin-bottom-45">
+											<img class="img-responsive" src="jpg/team4.jpg" alt="team"/>
+											<span class="team-per">Peter Fox</span>
+											<span class="team-desn">Graphic Designer</span>
+											<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem consequat ipsum.</p>
+											<ul class="team-social margin-top-15">
+												<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+												<li><a href="#" target="_blank"><i class="fa fa-behance"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</section>
+						<!--/Team Sec-->
+						
+						<!--Client Sec-->
+						<section class="client-sec container-fluid align-center text-left animated sec-pad bg-pattern bg-attachment-fixed">
+							<div class="row">
+								<div class="col-lg-12">
+									<h6 class="text-center margin-bottom-35">Our Clients</h6>
+									<div class="row">
+										<div class="col-md-2 col-xs-4 col-xxs-6">
+											<img class="img-responsive" src="png/client1.png" alt="client"/>
+										</div>
+										<div class="col-md-2 col-xs-4 col-xxs-6">
+											<img class="img-responsive" src="png/client2.png" alt="client"/>
+										</div>
+										<div class="col-md-2 col-xs-4 col-xxs-6">
+											<img class="img-responsive" src="png/client3.png" alt="client"/>
+										</div>
+										<div class="col-md-2 col-xs-4 col-xxs-6">
+											<img class="img-responsive" src="png/client4.png" alt="client"/>
+										</div>
+										<div class="col-md-2 col-xs-4 col-xxs-6">
+											<img class="img-responsive" src="png/client5.png" alt="client"/>
+										</div>
+										<div class="col-md-2 col-xs-4 col-xxs-6">
+											<img class="img-responsive" src="png/client6.png" alt="client"/>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</section>
+					
+						
+					</div>		
+				</div>
+		
+				
+				<!--Right Section-->
+				<div class="page page-right">
+					<div  class="page-inner full-height">
+						<!--form sec-->
+						<section data-ng-controller="ContactController" class="container-fluid align-center animated  sec-pad">
+							<h4 class="margin-bottom-25">Hey <span  data-ng-bind="formData.inputName||'There'" class="secondery-font font-italic weight-500">There</span>, happy to hear from you.</h4>
+							<div>
+								<form data-ng-submit="submit(contactform, $event)"  name="contactform"  method="post" class="row form-horizontal" role="form">
+									<div class="form-group input--hoshi col-sm-6" data-ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
+										<div class="input-wrap">
+											<input autocomplete="off" data-ng-model="formData.inputName" type="text" class="form-control input__field input input__field--hoshi" id="inputName" name="inputName" placeholder="Name" required>
+											<label class="input__label input__label input__label--hoshi input__label--hoshi-color-1 input__label--hoshi input__label--hoshi-color-1" ></label>
+										</div>	
+									</div>
+									<div class="form-group  input--hoshi col-sm-6" data-ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
+										<div class="input-wrap">
+											<input autocomplete="off" data-ng-model="formData.inputEmail" type="email" class="form-control input input__field input__field--hoshi" placeholder="Email" id="inputEmail" name="inputEmail" required>
+											<label class="input__label input__label--hoshi input__label--hoshi-color-1"></label>
+										</div>	
+									</div>
+									<div class="form-group  input--hoshi col-sm-12" data-ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
+										<div class="input-wrap">
+											<textarea data-ng-model="formData.inputMessage" class="form-control input input__field input__field--hoshi" rows="4" id="inputMessage" name="inputMessage" placeholder="message" required></textarea>
+											<label class="input__label input__label--hoshi input__label--hoshi-color-1"></label>
+										</div>	
+									</div>
+									<div class="form-group col-sm-12">
+										<div class="align-center">
+											<button type="submit" class="btn btn-default" data-ng-disabled="submitButtonDisabled">
+											<span class="mask"></span>
+											<span class="btn-label">send</span>
+											</button>
+										</div>
+									</div>
+								</form>
+								<p data-ng-class="result">{{ resultMessage }}</p>
+							</div>
+							
+							<div class="row">
+								<div class="address-detail">
+									<div class="col-sm-4 margin-bottom-sm">
+											
+										<span>visit</span>
+										<p>350 Fifth Avenue, New York 10118.</p>
+									</div>	
+									<div class="col-sm-4 margin-bottom-sm">
+											
+										<span>reach</span>
+										<a href="mailto:hello@Hencework.com" target="_blank">inquiry@porky.com</a>
+									</div>
+									
+									<div class="col-sm-4 margin-bottom-sm">
+										
+										<span>call</span>
+										<a href="callto:954788315970" target="_blank">+95 (478) 831-5970</a>
+									</div>
+								</div>
+							</div>
+						</section>	
+						<!--/form sec-->
+					
+						<!--google map-->
+						<section class="map-sec">
+							<div id="map_canvas"></div>
+						</section>
+						<!--/google map-->
+					</div>
+				</div>
+				<!--/Right Section-->
+				
+			</div>
+			<!-- /Splitlayout -->
+		
+		</div>
+		<!-- /Container -->
+		
+		<!--PhotoSwipe Popup-->
+		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="pswp__bg"></div>
+			<div class="pswp__scroll-wrap">
+
+				<div class="pswp__container">
+					<div class="pswp__item"></div>
+					<div class="pswp__item"></div>
+					<div class="pswp__item"></div>
+				</div>
+
+				<div class="pswp__ui pswp__ui--hidden">
+
+					<div class="pswp__top-bar">
+
+						<div class="pswp__counter"></div>
+
+						<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+						<button class="pswp__button pswp__button--share" title="Share"></button>
+
+						<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+						<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+						<div class="pswp__preloader">
+							<div class="pswp__preloader__icn">
+							  <div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
+							  </div>
+							</div>
+						</div>
+					</div>
+
+					<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+						<div class="pswp__share-tooltip"></div> 
+					</div>
+
+					<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+					</button>
+
+					<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+					</button>
+
+					<div class="pswp__caption">
+						<div class="pswp__caption__center"></div>
+					</div>
+
+				  </div>
+
+			</div>
+		</div>
+		<!--/PhotoSwipe Popup-->
+		
+		<!-- Scripts -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/cbpsplitlayout.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/controllers.js"></script>
+		<script src="js/notifyme.js"></script>
+		<script src="js/jquery.placeholder.js"></script>
+		<script src="js/photoswipe.min.js"></script>
+		<script src="js/photoswipe-ui-default.min.js"></script>
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		<script src="js/jquery.nicescroll.js"></script>
+		<script src="js/jquery.countdown.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/slider.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxXt2P7-U38bK0xEFIT-ebZJ1ngK8wjww"></script>
+		<script src="js/init.js"></script>
+		
+	</body>
+</html>
